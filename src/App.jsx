@@ -3,14 +3,19 @@ import SearchBar from "./components/SearchBar"
 
 
 function App() {
-  
-const [search, setSearch] = useState()
+
+  const api_endpoint = 'https://api.themoviedb.org/3/search/movie?api_key='
+
+  const [search, setSearch] = useState()
+
   return (
     <>
-    <div>
-      <h1 className="">Boolflix</h1>
-      <SearchBar onSearch={handleSearch} />
-    </div>
+
+      <div>
+        <h1 className="">Boolflix</h1>
+        <SearchBar onSearch={handleSearch} />
+      </div>
+      
     </>
   )
 }
